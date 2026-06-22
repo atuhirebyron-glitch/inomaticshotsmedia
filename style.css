@@ -148,7 +148,7 @@ section#my-work {
 }
 
 .grid-containter img:hover {
-  scale: 1.05;
+scale: 1.05;
 }
 
 details {
