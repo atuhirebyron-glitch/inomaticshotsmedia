@@ -193,6 +193,51 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.site-footer {
+  text-align: center;
+  padding: 1.25em 0;
+}
+
+/* common icon button */
+.site-footer .social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;              /* touch-friendly size */
+  height: 44px;
+  margin: 0 .5em;
+  border-radius: 50%;
+  color: #111;              /* icon color (uses svg fill via currentColor) */
+  background: transparent;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+/* brand colors (optional) */
+.site-footer .instagram { color: #E4405F; } /* Instagram */
+.site-footer .tiktok    { color: #010101; } /* TikTok (or use gradient) */
+.site-footer .email     { color: var(--text-color); }
+
+/* svg style: use currentColor for fill */
+.site-footer .social svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  display: block;
+}
+
+/* hover/focus */
+.site-footer .social:hover,
+.site-footer .social:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  outline: none;
+}
+
+/* keyboard focus visible */
+.site-footer .social:focus {
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+}
 @media(max-width: 900px){
   header {
     text-align: center;
