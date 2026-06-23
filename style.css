@@ -133,11 +133,19 @@ section#my-work {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 220px; /* adjust height to taste or use aspect-ratio on images */
+  grid-auto-rows: 220px;
   grid-template-areas:
     "img-1 img-2 img-3"
     "img-4 img-5 img-6";
   gap: 1em;
+}
+
+.grid-container a {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  border-radius: .5em;
+  
 }
 
 .grid-container img {
